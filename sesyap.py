@@ -16,8 +16,8 @@ def convert_to_speech(message):
     
     tts = gTTS(text[0], lang='tr') # Girilen metni sese dönüştür
     audio = io.BytesIO()
-    tts.save(audio, format='mp3')
+    tts.save(audio)
     audio.seek(0)
-    bot.send_audio(message.chat.id, audio) # Ses dosyasını kullanıcıya gönder
+    bot.send_audio(message.chat.id, audio, title="Ses Dosyası") # Ses dosyasını kullanıcıya gönder
 
 bot.polling()
