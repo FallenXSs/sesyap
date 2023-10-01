@@ -4,6 +4,7 @@ from io import BytesIO
 
 bot_token = "6086089724:AAELu6YRS_U0JuJMmWPyhtnBMWJ18iOnPRY"
 bot = telebot.TeleBot("6086089724:AAELu6YRS_U0JuJMmWPyhtnBMWJ18iOnPRY")
+print("Sesyap Online")
 
 @bot.message_handler(commands=['ses']) # /ses komutuna cevap veren fonksiyon
 def convert_to_speech(message):
