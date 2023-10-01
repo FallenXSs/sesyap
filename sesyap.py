@@ -1,4 +1,3 @@
-python
 import telebot
 from gtts import gTTS
 import io
